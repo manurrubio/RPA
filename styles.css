@@ -43,6 +43,7 @@ table {
   border-collapse: collapse;
   width: 100%;
   box-shadow: 0 5px 7px #cbad6d;
+  table-layout: fixed;
 }
 
 /* Establece una sombra en la cabeza de la tabla */
@@ -61,8 +62,10 @@ th {
 
 /* Agrega un padding en cada celda */
 td {
-  padding: 0.5rem 3rem;
   font-size: 1rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-wrap: break-word;
 }
 
 /* Crea una alternacia de colores a lo largo de las filas de la tabla. Establece en color azul todas las filas pares (2, 4, 6 ...) */

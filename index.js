@@ -10,7 +10,7 @@ function filtro() {
   // Iteramos el arreglo de filas
   for (let i = 0; i < filas.length; i++) {
     // Por cada fila se obtiene la referencia a la columna lenguaje
-    let columnaLenguaje = filas[i].getElementsByTagName("td")[2];
+    let columnaLenguaje = filas[i].getElementsByTagName("td")[1];
     // Se extrae el texto de la columna lenguaje
     let lenguaje = columnaLenguaje.textContent;
     // Se muestra u oculta la fila si la entrada de texto
